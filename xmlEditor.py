@@ -24,7 +24,7 @@ for item in splitSource:
 print pubdate
 
 #Make sde Connection 
-sde_conn = "C:/Users/mlemmon/AppData/Roaming/ESRI/Desktop10.5/ArcCatalog/DEVReference gissqldev.sde" + r"/DEVReference.DBO.Hydrography" + r"/DEVReference.DBO.NHDArea"
+sde_conn = "####"
 arcpy.env.workspace = sde_conn
 #fcList = arcpy.ListFeatureClasses()
 #for fc in fcList:
@@ -35,7 +35,7 @@ arcpy.env.workspace = sde_conn
 dir = arcpy.GetInstallInfo("desktop")["InstallDir"]
 translator = dir + "Metadata/Translator/ArcGIS2ISO19139.xml"
 date = time.strftime('%Y%m%d%I%M%S')
-xmlFile = "C:/Users/mlemmon/Desktop/DEVReference" + date + ".xml"
+xmlFile = "#####" + date + ".xml"
 arcpy.ExportMetadata_conversion(sde_conn, translator, xmlFile)
 
 #Parse the xml file
