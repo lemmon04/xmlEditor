@@ -53,8 +53,8 @@ print metaDate
 if metaDate == pubdate:
     print "Data up to date"
 else:
-    fromAddr = "gis@dot.nv.gov"
-    toAddr = "mlemmon@dot.nv.gov"
+    fromAddr = ""
+    toAddr = ""
 
     subject = "DEVReference data outdated"
     finish_time = time.asctime()
